@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <meta charset="utf-8">
     <title>Accessibility Forms</title>
@@ -16,28 +16,29 @@
     <div class="content">
       <h1>Application form</h1>
 
-      <form action="" method="post" name="form1" id="form1">
+      <form action=""  method="post" name="form1" id="form1">
       <p>1. Personal Details</p>
-      <p>Name:
-      <input type="text" id="textfield"></p>
+      <p><label for="Name">Name:</label>
+      <input type="text" id="Name"></p>
 
-      <p>Phone Number:
-      <input type="text" id="textfield3"></p>
+      <p><label for="Phone Number">Phone Number:</label>
+      <input type="text" id="Phone Number" ></p>
 
-      <p>Date of Birth:
-      <input type="text" tabindex="-1" id="textfield2"></p>
+      <p><label for="Date of Birth">Date of Birth:</label>
+      <input type="text" tabindex="-1" id="Date of Birth" ></p>
 
-      <p><label for="textfield4">First Name:
-      <input type="text" id="textfield4"></p>
 
-      <p>Last Name:
-      <input type="text" tabindex="4" id="textfield5"></p>
+      <p><label for="First Name">First Name:</label>
+      <input type="text" id="First Name"></p>
+
+      <p><label for="Last Name">Last Name:</label>
+      <input type="text"  tabindex="4" id="Last Name"></p>
 
       <p><label for="address">Address:</label>
-      <input type="text"></p>
+      <input type="text" tabindex="5" id="address"></p>
 
       <p>State:
-       <select id="state">
+       <select id="state" title="state">
         <option value="0">Select</option>
         <option value="Arizona">Arizona</option>
         <option value="California">California</option>
@@ -52,22 +53,22 @@
 
       <fieldset>
       <legend>2. Emergency Contact</legend>
-      <p>Name:
+      <p><label for="textfield13">Name:</label>
       <input type="text" id="textfield13"></p>
 
-      <p>Address:
+      <p><label for="textfield14">Address:</label>
       <input type="text" id="textfield14"></p>
 
-      <p>State
+      <p><label for="textfield15">State</label>
       <input type="text" id="textfield15"></p>
 
-      <p>Telephone:
+      <p><label for="textfield16">Telephone:</label>
       <input type="text" id="textfield16"></p>
       </fieldset>
 
       <p>3. Citizenship</p>
-      <p><input type="radio">United States</p>
-      <p><input type="radio">Canada</p>
+      <p><input type="radio" title="United States" id="US">United States</p>
+      <p><input type="radio" title="Canada" id="CA">Canada</p>
 
       <p><input type="submit" value="Submit" id="button" name="button"></p>
       </form>
